@@ -11,6 +11,23 @@ version = project.mod_version
 group = project.maven_group
 
 repositories {
+	maven {
+		url "https://maven.isxander.dev/releases"
+	}
+	maven {
+		url "https://maven.terraformersmc.com"
+	}
+	exclusiveContent {
+		forRepository {
+			maven {
+				name = "Modrinth"
+				url = "https://api.modrinth.com/maven"
+			}
+		}
+		filter {
+			includeGroup "maven.modrinth"
+		}
+	}
 	// Add repositories to retrieve artifacts from in here.
 	// You should only use this when depending on other mods because
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
@@ -23,6 +40,9 @@ dependencies {
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+	modImplementation "dev.isxander:yet-another-config-lib:1.7.1"
+	modImplementation "com.terraformersmc:modmenu:4.1.2"
+	modImplementation "maven.modrinth:configlib148:1.2.0"
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"

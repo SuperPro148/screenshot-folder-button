@@ -1,0 +1,22 @@
+{
+  "option.ssfb.show_button": "Show button",
+  "option.ssfb.button_pos": "Button position",
+  "option.ssfb.pos_x": "Custom X position",
+  "option.ssfb.pos_y": "Custom Y position",
+  "tooltip.ssfb.show_button": "Whether to show the button or not",
+  "tooltip.ssfb.button_pos": "The position of the button in the pause screen",
+  "tooltip.ssfb.pos_x": "X coordinate of custom button position",
+  "tooltip.ssfb.pos_y": "Y coordinate of custom button position",
+  "category.ssfb.button_options": "Button options",
+  "enum.ssfb.position.left_one": "Left (highest)",
+  "enum.ssfb.position.left_two": "Left (higher)",
+  "enum.ssfb.position.left_three": "Left (middle)",
+  "enum.ssfb.position.left_four": "Left (lower)",
+  "enum.ssfb.position.left_five": "Left (lowest)",
+  "enum.ssfb.position.right_one": "Right (highest)",
+  "enum.ssfb.position.right_two": "Right (higher)",
+  "enum.ssfb.position.right_three": "Right (middle)",
+  "enum.ssfb.position.right_four": "Right (lower)",
+  "enum.ssfb.position.right_five": "Right (lowest)",
+  "enum.ssfb.position.custom": "Custom position (specify below)"
+}
